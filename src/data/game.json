@@ -1,33 +1,23 @@
 {
     "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.game.schema.json",
-    "game": "UltimateMarvelVsCapcom3",
-    "creator": "ManualTeam",
+    "game": "MonsterHunterWilds",
+    "creator": "ratex",
 
-    "filler_item_name": "Free Character of Your Choice",
+    "filler_item_name": "Patience",
 
     "starting_items": [
         {
-            "items": ["Ryu", "Akuma"]
-        },
-        {
-            "item_categories": ["Left Side"],
+            "item_categories": ["Weapon"],
             "random": 1
         },
         {
-            "items": ["Wolverine", "Storm", "Phoenix"],
-            "random": 1
-        },
-        {
-            "item_categories": ["Trash"]
-        },
-        {
+            "item_categories": ["Monster"],
             "random": 3
         },
         {
-            "items": ["Deadpool"],
-            "yaml_option": ["start_with_deadpool"]
+            "items": ["Wounded Hollow Access"]
         }
     ],
-    "death_link": false,
+    "death_link": true,
     "starting_index": 1
 }

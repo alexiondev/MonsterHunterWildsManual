@@ -1,288 +1,1853 @@
 {
 	"$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.locations.schema.json",
     "data": [
-        {
-            "name": "Example_Range decide the amount of items required for this location",
-            "requires": "{OptionCount(Item Name for OptionCount Example, Example_Range)}"
-        },
-        {
-            "name": "Beat the Game - Ryu",
-            "category": ["Starter Team", "Left Side"],
-            "region": "ExampleRegion"
-        },
-        {
-            "name": "Beat the Game - Chun-Li",
-            "category": ["Starter Team", "Left Side"],
-            "requires": "|Chun-Li| or {YamlCompare(Example_Choice == 1)}"
-        },
-        {
-            "name": "Beat the Game - Akuma",
-            "category": ["Starter Team", "Left Side"],
-            "requires": "|Akuma| or {YamlCompare(Example_Toggle != True)}"
-        },
-
-        {
-            "name": "Beat the Game - Jill",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Jill| and {ItemValue(star:5)}"
-        },
-        {
-            "name": "Beat the Game - Shuma-Gorath",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Shuma-Gorath|",
-            "hint_entrance": "Unlock Shuma-Gorath"
-        },
-        {
-            "name": "Beat the Game - Nemesis T-Type",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Nemesis T-Type|"
-        },
-        {
-            "name": "Beat the Game - Firebrand",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Firebrand|"
-        },
-        {
-            "name": "Beat the Game - Strider Hiryu",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Strider Hiryu|"
-        },
-        {
-            "name": "Beat the Game - Phoenix Wright",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Phoenix Wright|"
-        },
-        {
-            "name": "Beat the Game - Nova",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Nova|"
-        },
-        {
-            "name": "Beat the Game - Ghost Rider",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Ghost Rider|"
-        },
-        {
-            "name": "Beat the Game - Hawkeye",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Hawkeye|"
-        },
-        {
-            "name": "Beat the Game - Doctor Strange",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Doctor Strange|"
-        },
-        {
-            "name": "Beat the Game - Chris",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Chris|"
-        },
-        {
-            "name": "Beat the Game - Arthur",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Arthur|"
-        },
-        {
-            "name": "Beat the Game - Frank West",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Frank West|"
-        },
-        {
-            "name": "Beat the Game - Vergil",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Vergil|"
-        },
-        {
-            "name": "Beat the Game - Iron Fist",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Iron Fist|"
-        },
-        {
-            "name": "Beat the Game - Rocket Raccoon",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Rocket Raccoon|"
-        },
-        {
-            "name": "Beat the Game - Captain America",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Captain America|"
-        },
-        {
-            "name": "Beat the Game - Dormammu",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Dormammu|"
-        },
-        {
-            "name": "Beat the Game - Wesker",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Wesker|"
-        },
-        {
-            "name": "Beat the Game - Zero",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Zero|"
-        },
-        {
-            "name": "Beat the Game - Dante",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Dante|"
-        },
-        {
-            "name": "Beat the Game - Deadpool",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Deadpool| or {YamlEnabled(free_deadpool)}"
-        },
-        {
-            "name": "Beat the Game - Wolverine",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Wolverine|"
-        },
-        {
-            "name": "Beat the Game - Iron Man",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Iron Man|"
-        },
-        {
-            "name": "Beat the Game - Doctor Doom",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Doctor Doom|"
-        },
-        {
-            "name": "Beat the Game - Morrigan",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Morrigan|"
-        },
-        {
-            "name": "Beat the Game - Tron",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Tron|"
-        },
-        {
-            "name": "Beat the Game - Trish",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Trish|"
-        },
-        {
-            "name": "Beat the Game - X-23",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|X-23|"
-        },
-        {
-            "name": "Beat the Game - Storm",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Storm|"
-        },
-        {
-            "name": "Beat the Game - Thor",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Thor|"
-        },
-        {
-            "name": "Beat the Game - M.O.D.O.K.",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|M.O.D.O.K.|"
-        },
-        {
-            "name": "Beat the Game - Felicia",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Felicia|"
-        },
-        {
-            "name": "Beat the Game - Spencer",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Spencer|"
-        },
-        {
-            "name": "Beat the Game - Viewtiful Joe",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Viewtiful Joe|"
-        },
-        {
-            "name": "Beat the Game - Spider-Man",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Spider-Man|",
-            "prehint": true
-        },
-        {
-            "name": "Beat the Game - Sentinel",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Sentinel|"
-        },
-        {
-            "name": "Beat the Game - Hulk",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Hulk|"
-        },
-        {
-            "name": "Beat the Game - Super-Skrull",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Super-Skrull|"
-        },
-        {
-            "name": "Beat the Game - Hsien-Ko",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Hsien-Ko|"
-        },
-        {
-            "name": "Beat the Game - Haggar",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Haggar|"
-        },
-        {
-            "name": "Beat the Game - C. Viper",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|C. Viper|"
-        },
-        {
-            "name": "Beat the Game - Amaterasu",
-            "category": ["Unlocked Teams", "Left Side"],
-            "requires": "|Amaterasu|"
-        },
-        {
-            "name": "Beat the Game - Phoenix",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Phoenix|"
-        },
-        {
-            "name": "Beat the Game - Magneto",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Magneto|"
-        },
-        {
-            "name": "Beat the Game - She-Hulk",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|She-Hulk|"
-        },
-        {
-            "name": "Beat the Game - Taskmaster",
-            "category": ["Unlocked Teams", "Right Side"],
-            "requires": "|Taskmaster|"
-        },
-
-        {
-            "name": "We Saved the World!",
-            "victory": true,
-            "category": ["All Characters Complete!"],
-            "requires": "|Marvel event| and |Capcom event|"
-        },
-        {
-            "name": "Marvel%",
-            "victory": true,
-            "category": ["All Characters Complete!"],
-            "requires": "|Marvel event|"
-        },
-        {
-            "name": "Capcom%",
-            "victory": true,
-            "category": ["All Characters Complete!"],
-            "requires": "|Capcom event|"
-        },
-        {
-            "name": "Stars%",
-            "victory": true,
-            "category": ["All Characters Complete!"],
-            "requires": "{ItemValue(star:10)} and {ItemValue(coins:10)}"
-        }
-    ]
+		{
+			"name": "Ajarakan - Great Sword",
+			"requires": "|Ajarakan Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Arkveld - Great Sword",
+			"requires": "|Arkveld Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Balahara - Great Sword",
+			"requires": "|Balahara Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Blagonga - Great Sword",
+			"requires": "|Blagonga Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Chatacabra - Great Sword",
+			"requires": "|Chatacabra Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Congalala - Great Sword",
+			"requires": "|Congalala Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Doshaguma - Great Sword",
+			"requires": "|Doshaguma Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "G. Doshaguma - Great Sword",
+			"requires": "|G. Doshaguma Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "G. Ebony Odogaron - Great Sword",
+			"requires": "|G. Ebony Odogaron Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "G. Fulgur Anjanath - Great Sword",
+			"requires": "|G. Fulgur Anjanath Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "G. Rathalos - Great Sword",
+			"requires": "|G. Rathalos Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Gogmazios - Great Sword",
+			"requires": "|Gogmazios Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Gore Magala - Great Sword",
+			"requires": "|Gore Magala Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Gravios - Great Sword",
+			"requires": "|Gravios Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Gypceros - Great Sword",
+			"requires": "|Gypceros Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Hirabami - Great Sword",
+			"requires": "|Hirabami Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Jin Dahaad - Great Sword",
+			"requires": "|Jin Dahaad Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Lagiacrus - Great Sword",
+			"requires": "|Lagiacrus Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Lala Barina - Great Sword",
+			"requires": "|Lala Barina Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Mizutsune - Great Sword",
+			"requires": "|Mizutsune Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Nerscylla - Great Sword",
+			"requires": "|Nerscylla Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Nu Udra - Great Sword",
+			"requires": "|Nu Udra Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Omega Planete - Great Sword",
+			"requires": "|Omega Planete Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Quematrice - Great Sword",
+			"requires": "|Quematrice Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Rathalos - Great Sword",
+			"requires": "|Rathalos Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Rathian - Great Sword",
+			"requires": "|Rathian Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Rey Dau - Great Sword",
+			"requires": "|Rey Dau Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Rompopolo - Great Sword",
+			"requires": "|Rompopolo Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Seregios - Great Sword",
+			"requires": "|Seregios Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Uth Duna - Great Sword",
+			"requires": "|Uth Duna Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Xu Wu - Great Sword",
+			"requires": "|Xu Wu Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Yian Kut-Ku - Great Sword",
+			"requires": "|Yian Kut-Ku Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Zoh Shia - Great Sword",
+			"requires": "|Zoh Shia Permit| and (|Great Sword Fire| or |Great Sword Water| or |Great Sword Thunder| or |Great Sword Ice| or |Great Sword Dragon| or |Great Sword Raw|)"
+		},
+		{
+			"name": "Ajarakan - Long Sword",
+			"requires": "|Ajarakan Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Arkveld - Long Sword",
+			"requires": "|Arkveld Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Balahara - Long Sword",
+			"requires": "|Balahara Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Blagonga - Long Sword",
+			"requires": "|Blagonga Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Chatacabra - Long Sword",
+			"requires": "|Chatacabra Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Congalala - Long Sword",
+			"requires": "|Congalala Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Doshaguma - Long Sword",
+			"requires": "|Doshaguma Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "G. Doshaguma - Long Sword",
+			"requires": "|G. Doshaguma Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "G. Ebony Odogaron - Long Sword",
+			"requires": "|G. Ebony Odogaron Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "G. Fulgur Anjanath - Long Sword",
+			"requires": "|G. Fulgur Anjanath Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "G. Rathalos - Long Sword",
+			"requires": "|G. Rathalos Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Gogmazios - Long Sword",
+			"requires": "|Gogmazios Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Gore Magala - Long Sword",
+			"requires": "|Gore Magala Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Gravios - Long Sword",
+			"requires": "|Gravios Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Gypceros - Long Sword",
+			"requires": "|Gypceros Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Hirabami - Long Sword",
+			"requires": "|Hirabami Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Jin Dahaad - Long Sword",
+			"requires": "|Jin Dahaad Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Lagiacrus - Long Sword",
+			"requires": "|Lagiacrus Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Lala Barina - Long Sword",
+			"requires": "|Lala Barina Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Mizutsune - Long Sword",
+			"requires": "|Mizutsune Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Nerscylla - Long Sword",
+			"requires": "|Nerscylla Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Nu Udra - Long Sword",
+			"requires": "|Nu Udra Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Omega Planete - Long Sword",
+			"requires": "|Omega Planete Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Quematrice - Long Sword",
+			"requires": "|Quematrice Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Rathalos - Long Sword",
+			"requires": "|Rathalos Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Rathian - Long Sword",
+			"requires": "|Rathian Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Rey Dau - Long Sword",
+			"requires": "|Rey Dau Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Rompopolo - Long Sword",
+			"requires": "|Rompopolo Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Seregios - Long Sword",
+			"requires": "|Seregios Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Uth Duna - Long Sword",
+			"requires": "|Uth Duna Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Xu Wu - Long Sword",
+			"requires": "|Xu Wu Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Yian Kut-Ku - Long Sword",
+			"requires": "|Yian Kut-Ku Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Zoh Shia - Long Sword",
+			"requires": "|Zoh Shia Permit| and (|Long Sword Fire| or |Long Sword Water| or |Long Sword Thunder| or |Long Sword Ice| or |Long Sword Dragon| or |Long Sword Raw|)"
+		},
+		{
+			"name": "Ajarakan - Sword and Shield",
+			"requires": "|Ajarakan Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Arkveld - Sword and Shield",
+			"requires": "|Arkveld Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Balahara - Sword and Shield",
+			"requires": "|Balahara Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Blagonga - Sword and Shield",
+			"requires": "|Blagonga Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Chatacabra - Sword and Shield",
+			"requires": "|Chatacabra Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Congalala - Sword and Shield",
+			"requires": "|Congalala Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Doshaguma - Sword and Shield",
+			"requires": "|Doshaguma Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "G. Doshaguma - Sword and Shield",
+			"requires": "|G. Doshaguma Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "G. Ebony Odogaron - Sword and Shield",
+			"requires": "|G. Ebony Odogaron Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "G. Fulgur Anjanath - Sword and Shield",
+			"requires": "|G. Fulgur Anjanath Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "G. Rathalos - Sword and Shield",
+			"requires": "|G. Rathalos Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Gogmazios - Sword and Shield",
+			"requires": "|Gogmazios Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Gore Magala - Sword and Shield",
+			"requires": "|Gore Magala Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Gravios - Sword and Shield",
+			"requires": "|Gravios Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Gypceros - Sword and Shield",
+			"requires": "|Gypceros Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Hirabami - Sword and Shield",
+			"requires": "|Hirabami Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Jin Dahaad - Sword and Shield",
+			"requires": "|Jin Dahaad Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Lagiacrus - Sword and Shield",
+			"requires": "|Lagiacrus Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Lala Barina - Sword and Shield",
+			"requires": "|Lala Barina Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Mizutsune - Sword and Shield",
+			"requires": "|Mizutsune Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Nerscylla - Sword and Shield",
+			"requires": "|Nerscylla Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Nu Udra - Sword and Shield",
+			"requires": "|Nu Udra Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Omega Planete - Sword and Shield",
+			"requires": "|Omega Planete Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Quematrice - Sword and Shield",
+			"requires": "|Quematrice Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Rathalos - Sword and Shield",
+			"requires": "|Rathalos Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Rathian - Sword and Shield",
+			"requires": "|Rathian Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Rey Dau - Sword and Shield",
+			"requires": "|Rey Dau Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Rompopolo - Sword and Shield",
+			"requires": "|Rompopolo Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Seregios - Sword and Shield",
+			"requires": "|Seregios Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Uth Duna - Sword and Shield",
+			"requires": "|Uth Duna Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Xu Wu - Sword and Shield",
+			"requires": "|Xu Wu Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Yian Kut-Ku - Sword and Shield",
+			"requires": "|Yian Kut-Ku Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Zoh Shia - Sword and Shield",
+			"requires": "|Zoh Shia Permit| and (|Sword and Shield Fire| or |Sword and Shield Water| or |Sword and Shield Thunder| or |Sword and Shield Ice| or |Sword and Shield Dragon| or |Sword and Shield Raw|)"
+		},
+		{
+			"name": "Ajarakan - Dual Blades",
+			"requires": "|Ajarakan Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Arkveld - Dual Blades",
+			"requires": "|Arkveld Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Balahara - Dual Blades",
+			"requires": "|Balahara Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Blagonga - Dual Blades",
+			"requires": "|Blagonga Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Chatacabra - Dual Blades",
+			"requires": "|Chatacabra Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Congalala - Dual Blades",
+			"requires": "|Congalala Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Doshaguma - Dual Blades",
+			"requires": "|Doshaguma Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "G. Doshaguma - Dual Blades",
+			"requires": "|G. Doshaguma Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "G. Ebony Odogaron - Dual Blades",
+			"requires": "|G. Ebony Odogaron Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "G. Fulgur Anjanath - Dual Blades",
+			"requires": "|G. Fulgur Anjanath Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "G. Rathalos - Dual Blades",
+			"requires": "|G. Rathalos Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Gogmazios - Dual Blades",
+			"requires": "|Gogmazios Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Gore Magala - Dual Blades",
+			"requires": "|Gore Magala Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Gravios - Dual Blades",
+			"requires": "|Gravios Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Gypceros - Dual Blades",
+			"requires": "|Gypceros Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Hirabami - Dual Blades",
+			"requires": "|Hirabami Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Jin Dahaad - Dual Blades",
+			"requires": "|Jin Dahaad Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Lagiacrus - Dual Blades",
+			"requires": "|Lagiacrus Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Lala Barina - Dual Blades",
+			"requires": "|Lala Barina Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Mizutsune - Dual Blades",
+			"requires": "|Mizutsune Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Nerscylla - Dual Blades",
+			"requires": "|Nerscylla Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Nu Udra - Dual Blades",
+			"requires": "|Nu Udra Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Omega Planete - Dual Blades",
+			"requires": "|Omega Planete Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Quematrice - Dual Blades",
+			"requires": "|Quematrice Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Rathalos - Dual Blades",
+			"requires": "|Rathalos Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Rathian - Dual Blades",
+			"requires": "|Rathian Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Rey Dau - Dual Blades",
+			"requires": "|Rey Dau Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Rompopolo - Dual Blades",
+			"requires": "|Rompopolo Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Seregios - Dual Blades",
+			"requires": "|Seregios Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Uth Duna - Dual Blades",
+			"requires": "|Uth Duna Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Xu Wu - Dual Blades",
+			"requires": "|Xu Wu Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Yian Kut-Ku - Dual Blades",
+			"requires": "|Yian Kut-Ku Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Zoh Shia - Dual Blades",
+			"requires": "|Zoh Shia Permit| and (|Dual Blades Fire| or |Dual Blades Water| or |Dual Blades Thunder| or |Dual Blades Ice| or |Dual Blades Dragon| or |Dual Blades Raw|)"
+		},
+		{
+			"name": "Ajarakan - Hammer",
+			"requires": "|Ajarakan Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Arkveld - Hammer",
+			"requires": "|Arkveld Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Balahara - Hammer",
+			"requires": "|Balahara Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Blagonga - Hammer",
+			"requires": "|Blagonga Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Chatacabra - Hammer",
+			"requires": "|Chatacabra Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Congalala - Hammer",
+			"requires": "|Congalala Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Doshaguma - Hammer",
+			"requires": "|Doshaguma Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "G. Doshaguma - Hammer",
+			"requires": "|G. Doshaguma Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "G. Ebony Odogaron - Hammer",
+			"requires": "|G. Ebony Odogaron Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "G. Fulgur Anjanath - Hammer",
+			"requires": "|G. Fulgur Anjanath Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "G. Rathalos - Hammer",
+			"requires": "|G. Rathalos Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Gogmazios - Hammer",
+			"requires": "|Gogmazios Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Gore Magala - Hammer",
+			"requires": "|Gore Magala Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Gravios - Hammer",
+			"requires": "|Gravios Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Gypceros - Hammer",
+			"requires": "|Gypceros Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Hirabami - Hammer",
+			"requires": "|Hirabami Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Jin Dahaad - Hammer",
+			"requires": "|Jin Dahaad Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Lagiacrus - Hammer",
+			"requires": "|Lagiacrus Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Lala Barina - Hammer",
+			"requires": "|Lala Barina Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Mizutsune - Hammer",
+			"requires": "|Mizutsune Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Nerscylla - Hammer",
+			"requires": "|Nerscylla Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Nu Udra - Hammer",
+			"requires": "|Nu Udra Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Omega Planete - Hammer",
+			"requires": "|Omega Planete Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Quematrice - Hammer",
+			"requires": "|Quematrice Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Rathalos - Hammer",
+			"requires": "|Rathalos Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Rathian - Hammer",
+			"requires": "|Rathian Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Rey Dau - Hammer",
+			"requires": "|Rey Dau Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Rompopolo - Hammer",
+			"requires": "|Rompopolo Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Seregios - Hammer",
+			"requires": "|Seregios Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Uth Duna - Hammer",
+			"requires": "|Uth Duna Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Xu Wu - Hammer",
+			"requires": "|Xu Wu Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Yian Kut-Ku - Hammer",
+			"requires": "|Yian Kut-Ku Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Zoh Shia - Hammer",
+			"requires": "|Zoh Shia Permit| and (|Hammer Fire| or |Hammer Water| or |Hammer Thunder| or |Hammer Ice| or |Hammer Dragon| or |Hammer Raw|)"
+		},
+		{
+			"name": "Ajarakan - Hunting Horn",
+			"requires": "|Ajarakan Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Arkveld - Hunting Horn",
+			"requires": "|Arkveld Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Balahara - Hunting Horn",
+			"requires": "|Balahara Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Blagonga - Hunting Horn",
+			"requires": "|Blagonga Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Chatacabra - Hunting Horn",
+			"requires": "|Chatacabra Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Congalala - Hunting Horn",
+			"requires": "|Congalala Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Doshaguma - Hunting Horn",
+			"requires": "|Doshaguma Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "G. Doshaguma - Hunting Horn",
+			"requires": "|G. Doshaguma Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "G. Ebony Odogaron - Hunting Horn",
+			"requires": "|G. Ebony Odogaron Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "G. Fulgur Anjanath - Hunting Horn",
+			"requires": "|G. Fulgur Anjanath Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "G. Rathalos - Hunting Horn",
+			"requires": "|G. Rathalos Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Gogmazios - Hunting Horn",
+			"requires": "|Gogmazios Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Gore Magala - Hunting Horn",
+			"requires": "|Gore Magala Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Gravios - Hunting Horn",
+			"requires": "|Gravios Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Gypceros - Hunting Horn",
+			"requires": "|Gypceros Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Hirabami - Hunting Horn",
+			"requires": "|Hirabami Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Jin Dahaad - Hunting Horn",
+			"requires": "|Jin Dahaad Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Lagiacrus - Hunting Horn",
+			"requires": "|Lagiacrus Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Lala Barina - Hunting Horn",
+			"requires": "|Lala Barina Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Mizutsune - Hunting Horn",
+			"requires": "|Mizutsune Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Nerscylla - Hunting Horn",
+			"requires": "|Nerscylla Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Nu Udra - Hunting Horn",
+			"requires": "|Nu Udra Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Omega Planete - Hunting Horn",
+			"requires": "|Omega Planete Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Quematrice - Hunting Horn",
+			"requires": "|Quematrice Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Rathalos - Hunting Horn",
+			"requires": "|Rathalos Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Rathian - Hunting Horn",
+			"requires": "|Rathian Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Rey Dau - Hunting Horn",
+			"requires": "|Rey Dau Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Rompopolo - Hunting Horn",
+			"requires": "|Rompopolo Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Seregios - Hunting Horn",
+			"requires": "|Seregios Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Uth Duna - Hunting Horn",
+			"requires": "|Uth Duna Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Xu Wu - Hunting Horn",
+			"requires": "|Xu Wu Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Yian Kut-Ku - Hunting Horn",
+			"requires": "|Yian Kut-Ku Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Zoh Shia - Hunting Horn",
+			"requires": "|Zoh Shia Permit| and (|Hunting Horn Fire| or |Hunting Horn Water| or |Hunting Horn Thunder| or |Hunting Horn Ice| or |Hunting Horn Dragon| or |Hunting Horn Raw|)"
+		},
+		{
+			"name": "Ajarakan - Lance",
+			"requires": "|Ajarakan Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Arkveld - Lance",
+			"requires": "|Arkveld Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Balahara - Lance",
+			"requires": "|Balahara Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Blagonga - Lance",
+			"requires": "|Blagonga Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Chatacabra - Lance",
+			"requires": "|Chatacabra Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Congalala - Lance",
+			"requires": "|Congalala Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Doshaguma - Lance",
+			"requires": "|Doshaguma Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "G. Doshaguma - Lance",
+			"requires": "|G. Doshaguma Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "G. Ebony Odogaron - Lance",
+			"requires": "|G. Ebony Odogaron Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "G. Fulgur Anjanath - Lance",
+			"requires": "|G. Fulgur Anjanath Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "G. Rathalos - Lance",
+			"requires": "|G. Rathalos Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Gogmazios - Lance",
+			"requires": "|Gogmazios Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Gore Magala - Lance",
+			"requires": "|Gore Magala Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Gravios - Lance",
+			"requires": "|Gravios Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Gypceros - Lance",
+			"requires": "|Gypceros Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Hirabami - Lance",
+			"requires": "|Hirabami Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Jin Dahaad - Lance",
+			"requires": "|Jin Dahaad Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Lagiacrus - Lance",
+			"requires": "|Lagiacrus Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Lala Barina - Lance",
+			"requires": "|Lala Barina Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Mizutsune - Lance",
+			"requires": "|Mizutsune Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Nerscylla - Lance",
+			"requires": "|Nerscylla Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Nu Udra - Lance",
+			"requires": "|Nu Udra Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Omega Planete - Lance",
+			"requires": "|Omega Planete Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Quematrice - Lance",
+			"requires": "|Quematrice Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Rathalos - Lance",
+			"requires": "|Rathalos Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Rathian - Lance",
+			"requires": "|Rathian Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Rey Dau - Lance",
+			"requires": "|Rey Dau Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Rompopolo - Lance",
+			"requires": "|Rompopolo Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Seregios - Lance",
+			"requires": "|Seregios Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Uth Duna - Lance",
+			"requires": "|Uth Duna Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Xu Wu - Lance",
+			"requires": "|Xu Wu Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Yian Kut-Ku - Lance",
+			"requires": "|Yian Kut-Ku Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Zoh Shia - Lance",
+			"requires": "|Zoh Shia Permit| and (|Lance Fire| or |Lance Water| or |Lance Thunder| or |Lance Ice| or |Lance Dragon| or |Lance Raw|)"
+		},
+		{
+			"name": "Ajarakan - Gunlance",
+			"requires": "|Ajarakan Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Arkveld - Gunlance",
+			"requires": "|Arkveld Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Balahara - Gunlance",
+			"requires": "|Balahara Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Blagonga - Gunlance",
+			"requires": "|Blagonga Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Chatacabra - Gunlance",
+			"requires": "|Chatacabra Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Congalala - Gunlance",
+			"requires": "|Congalala Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Doshaguma - Gunlance",
+			"requires": "|Doshaguma Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "G. Doshaguma - Gunlance",
+			"requires": "|G. Doshaguma Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "G. Ebony Odogaron - Gunlance",
+			"requires": "|G. Ebony Odogaron Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "G. Fulgur Anjanath - Gunlance",
+			"requires": "|G. Fulgur Anjanath Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "G. Rathalos - Gunlance",
+			"requires": "|G. Rathalos Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Gogmazios - Gunlance",
+			"requires": "|Gogmazios Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Gore Magala - Gunlance",
+			"requires": "|Gore Magala Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Gravios - Gunlance",
+			"requires": "|Gravios Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Gypceros - Gunlance",
+			"requires": "|Gypceros Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Hirabami - Gunlance",
+			"requires": "|Hirabami Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Jin Dahaad - Gunlance",
+			"requires": "|Jin Dahaad Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Lagiacrus - Gunlance",
+			"requires": "|Lagiacrus Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Lala Barina - Gunlance",
+			"requires": "|Lala Barina Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Mizutsune - Gunlance",
+			"requires": "|Mizutsune Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Nerscylla - Gunlance",
+			"requires": "|Nerscylla Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Nu Udra - Gunlance",
+			"requires": "|Nu Udra Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Omega Planete - Gunlance",
+			"requires": "|Omega Planete Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Quematrice - Gunlance",
+			"requires": "|Quematrice Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Rathalos - Gunlance",
+			"requires": "|Rathalos Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Rathian - Gunlance",
+			"requires": "|Rathian Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Rey Dau - Gunlance",
+			"requires": "|Rey Dau Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Rompopolo - Gunlance",
+			"requires": "|Rompopolo Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Seregios - Gunlance",
+			"requires": "|Seregios Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Uth Duna - Gunlance",
+			"requires": "|Uth Duna Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Xu Wu - Gunlance",
+			"requires": "|Xu Wu Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Yian Kut-Ku - Gunlance",
+			"requires": "|Yian Kut-Ku Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Zoh Shia - Gunlance",
+			"requires": "|Zoh Shia Permit| and (|Gunlance Fire| or |Gunlance Water| or |Gunlance Thunder| or |Gunlance Ice| or |Gunlance Dragon| or |Gunlance Raw|)"
+		},
+		{
+			"name": "Ajarakan - Switch Axe",
+			"requires": "|Ajarakan Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Arkveld - Switch Axe",
+			"requires": "|Arkveld Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Balahara - Switch Axe",
+			"requires": "|Balahara Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Blagonga - Switch Axe",
+			"requires": "|Blagonga Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Chatacabra - Switch Axe",
+			"requires": "|Chatacabra Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Congalala - Switch Axe",
+			"requires": "|Congalala Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Doshaguma - Switch Axe",
+			"requires": "|Doshaguma Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "G. Doshaguma - Switch Axe",
+			"requires": "|G. Doshaguma Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "G. Ebony Odogaron - Switch Axe",
+			"requires": "|G. Ebony Odogaron Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "G. Fulgur Anjanath - Switch Axe",
+			"requires": "|G. Fulgur Anjanath Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "G. Rathalos - Switch Axe",
+			"requires": "|G. Rathalos Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Gogmazios - Switch Axe",
+			"requires": "|Gogmazios Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Gore Magala - Switch Axe",
+			"requires": "|Gore Magala Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Gravios - Switch Axe",
+			"requires": "|Gravios Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Gypceros - Switch Axe",
+			"requires": "|Gypceros Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Hirabami - Switch Axe",
+			"requires": "|Hirabami Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Jin Dahaad - Switch Axe",
+			"requires": "|Jin Dahaad Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Lagiacrus - Switch Axe",
+			"requires": "|Lagiacrus Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Lala Barina - Switch Axe",
+			"requires": "|Lala Barina Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Mizutsune - Switch Axe",
+			"requires": "|Mizutsune Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Nerscylla - Switch Axe",
+			"requires": "|Nerscylla Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Nu Udra - Switch Axe",
+			"requires": "|Nu Udra Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Omega Planete - Switch Axe",
+			"requires": "|Omega Planete Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Quematrice - Switch Axe",
+			"requires": "|Quematrice Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Rathalos - Switch Axe",
+			"requires": "|Rathalos Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Rathian - Switch Axe",
+			"requires": "|Rathian Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Rey Dau - Switch Axe",
+			"requires": "|Rey Dau Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Rompopolo - Switch Axe",
+			"requires": "|Rompopolo Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Seregios - Switch Axe",
+			"requires": "|Seregios Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Uth Duna - Switch Axe",
+			"requires": "|Uth Duna Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Xu Wu - Switch Axe",
+			"requires": "|Xu Wu Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Yian Kut-Ku - Switch Axe",
+			"requires": "|Yian Kut-Ku Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Zoh Shia - Switch Axe",
+			"requires": "|Zoh Shia Permit| and (|Switch Axe Fire| or |Switch Axe Water| or |Switch Axe Thunder| or |Switch Axe Ice| or |Switch Axe Dragon| or |Switch Axe Raw|)"
+		},
+		{
+			"name": "Ajarakan - Charge Blade",
+			"requires": "|Ajarakan Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Arkveld - Charge Blade",
+			"requires": "|Arkveld Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Balahara - Charge Blade",
+			"requires": "|Balahara Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Blagonga - Charge Blade",
+			"requires": "|Blagonga Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Chatacabra - Charge Blade",
+			"requires": "|Chatacabra Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Congalala - Charge Blade",
+			"requires": "|Congalala Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Doshaguma - Charge Blade",
+			"requires": "|Doshaguma Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "G. Doshaguma - Charge Blade",
+			"requires": "|G. Doshaguma Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "G. Ebony Odogaron - Charge Blade",
+			"requires": "|G. Ebony Odogaron Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "G. Fulgur Anjanath - Charge Blade",
+			"requires": "|G. Fulgur Anjanath Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "G. Rathalos - Charge Blade",
+			"requires": "|G. Rathalos Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Gogmazios - Charge Blade",
+			"requires": "|Gogmazios Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Gore Magala - Charge Blade",
+			"requires": "|Gore Magala Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Gravios - Charge Blade",
+			"requires": "|Gravios Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Gypceros - Charge Blade",
+			"requires": "|Gypceros Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Hirabami - Charge Blade",
+			"requires": "|Hirabami Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Jin Dahaad - Charge Blade",
+			"requires": "|Jin Dahaad Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Lagiacrus - Charge Blade",
+			"requires": "|Lagiacrus Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Lala Barina - Charge Blade",
+			"requires": "|Lala Barina Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Mizutsune - Charge Blade",
+			"requires": "|Mizutsune Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Nerscylla - Charge Blade",
+			"requires": "|Nerscylla Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Nu Udra - Charge Blade",
+			"requires": "|Nu Udra Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Omega Planete - Charge Blade",
+			"requires": "|Omega Planete Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Quematrice - Charge Blade",
+			"requires": "|Quematrice Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Rathalos - Charge Blade",
+			"requires": "|Rathalos Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Rathian - Charge Blade",
+			"requires": "|Rathian Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Rey Dau - Charge Blade",
+			"requires": "|Rey Dau Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Rompopolo - Charge Blade",
+			"requires": "|Rompopolo Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Seregios - Charge Blade",
+			"requires": "|Seregios Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Uth Duna - Charge Blade",
+			"requires": "|Uth Duna Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Xu Wu - Charge Blade",
+			"requires": "|Xu Wu Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Yian Kut-Ku - Charge Blade",
+			"requires": "|Yian Kut-Ku Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Zoh Shia - Charge Blade",
+			"requires": "|Zoh Shia Permit| and (|Charge Blade Fire| or |Charge Blade Water| or |Charge Blade Thunder| or |Charge Blade Ice| or |Charge Blade Dragon| or |Charge Blade Raw|)"
+		},
+		{
+			"name": "Ajarakan - Insect Glaive",
+			"requires": "|Ajarakan Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Arkveld - Insect Glaive",
+			"requires": "|Arkveld Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Balahara - Insect Glaive",
+			"requires": "|Balahara Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Blagonga - Insect Glaive",
+			"requires": "|Blagonga Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Chatacabra - Insect Glaive",
+			"requires": "|Chatacabra Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Congalala - Insect Glaive",
+			"requires": "|Congalala Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Doshaguma - Insect Glaive",
+			"requires": "|Doshaguma Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "G. Doshaguma - Insect Glaive",
+			"requires": "|G. Doshaguma Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "G. Ebony Odogaron - Insect Glaive",
+			"requires": "|G. Ebony Odogaron Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "G. Fulgur Anjanath - Insect Glaive",
+			"requires": "|G. Fulgur Anjanath Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "G. Rathalos - Insect Glaive",
+			"requires": "|G. Rathalos Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Gogmazios - Insect Glaive",
+			"requires": "|Gogmazios Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Gore Magala - Insect Glaive",
+			"requires": "|Gore Magala Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Gravios - Insect Glaive",
+			"requires": "|Gravios Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Gypceros - Insect Glaive",
+			"requires": "|Gypceros Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Hirabami - Insect Glaive",
+			"requires": "|Hirabami Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Jin Dahaad - Insect Glaive",
+			"requires": "|Jin Dahaad Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Lagiacrus - Insect Glaive",
+			"requires": "|Lagiacrus Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Lala Barina - Insect Glaive",
+			"requires": "|Lala Barina Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Mizutsune - Insect Glaive",
+			"requires": "|Mizutsune Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Nerscylla - Insect Glaive",
+			"requires": "|Nerscylla Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Nu Udra - Insect Glaive",
+			"requires": "|Nu Udra Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Omega Planete - Insect Glaive",
+			"requires": "|Omega Planete Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Quematrice - Insect Glaive",
+			"requires": "|Quematrice Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Rathalos - Insect Glaive",
+			"requires": "|Rathalos Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Rathian - Insect Glaive",
+			"requires": "|Rathian Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Rey Dau - Insect Glaive",
+			"requires": "|Rey Dau Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Rompopolo - Insect Glaive",
+			"requires": "|Rompopolo Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Seregios - Insect Glaive",
+			"requires": "|Seregios Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Uth Duna - Insect Glaive",
+			"requires": "|Uth Duna Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Xu Wu - Insect Glaive",
+			"requires": "|Xu Wu Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Yian Kut-Ku - Insect Glaive",
+			"requires": "|Yian Kut-Ku Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Zoh Shia - Insect Glaive",
+			"requires": "|Zoh Shia Permit| and (|Insect Glaive Fire| or |Insect Glaive Water| or |Insect Glaive Thunder| or |Insect Glaive Ice| or |Insect Glaive Dragon| or |Insect Glaive Raw|)"
+		},
+		{
+			"name": "Ajarakan - Light Bowgun",
+			"requires": "|Ajarakan Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Arkveld - Light Bowgun",
+			"requires": "|Arkveld Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Balahara - Light Bowgun",
+			"requires": "|Balahara Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Blagonga - Light Bowgun",
+			"requires": "|Blagonga Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Chatacabra - Light Bowgun",
+			"requires": "|Chatacabra Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Congalala - Light Bowgun",
+			"requires": "|Congalala Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Doshaguma - Light Bowgun",
+			"requires": "|Doshaguma Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "G. Doshaguma - Light Bowgun",
+			"requires": "|G. Doshaguma Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "G. Ebony Odogaron - Light Bowgun",
+			"requires": "|G. Ebony Odogaron Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "G. Fulgur Anjanath - Light Bowgun",
+			"requires": "|G. Fulgur Anjanath Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "G. Rathalos - Light Bowgun",
+			"requires": "|G. Rathalos Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Gogmazios - Light Bowgun",
+			"requires": "|Gogmazios Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Gore Magala - Light Bowgun",
+			"requires": "|Gore Magala Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Gravios - Light Bowgun",
+			"requires": "|Gravios Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Gypceros - Light Bowgun",
+			"requires": "|Gypceros Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Hirabami - Light Bowgun",
+			"requires": "|Hirabami Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Jin Dahaad - Light Bowgun",
+			"requires": "|Jin Dahaad Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Lagiacrus - Light Bowgun",
+			"requires": "|Lagiacrus Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Lala Barina - Light Bowgun",
+			"requires": "|Lala Barina Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Mizutsune - Light Bowgun",
+			"requires": "|Mizutsune Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Nerscylla - Light Bowgun",
+			"requires": "|Nerscylla Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Nu Udra - Light Bowgun",
+			"requires": "|Nu Udra Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Omega Planete - Light Bowgun",
+			"requires": "|Omega Planete Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Quematrice - Light Bowgun",
+			"requires": "|Quematrice Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Rathalos - Light Bowgun",
+			"requires": "|Rathalos Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Rathian - Light Bowgun",
+			"requires": "|Rathian Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Rey Dau - Light Bowgun",
+			"requires": "|Rey Dau Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Rompopolo - Light Bowgun",
+			"requires": "|Rompopolo Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Seregios - Light Bowgun",
+			"requires": "|Seregios Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Uth Duna - Light Bowgun",
+			"requires": "|Uth Duna Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Xu Wu - Light Bowgun",
+			"requires": "|Xu Wu Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Yian Kut-Ku - Light Bowgun",
+			"requires": "|Yian Kut-Ku Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Zoh Shia - Light Bowgun",
+			"requires": "|Zoh Shia Permit| and (|Light Bowgun Fire| or |Light Bowgun Water| or |Light Bowgun Thunder| or |Light Bowgun Ice| or |Light Bowgun Dragon| or |Light Bowgun Raw|)"
+		},
+		{
+			"name": "Ajarakan - Heavy Bowgun",
+			"requires": "|Ajarakan Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Arkveld - Heavy Bowgun",
+			"requires": "|Arkveld Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Balahara - Heavy Bowgun",
+			"requires": "|Balahara Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Blagonga - Heavy Bowgun",
+			"requires": "|Blagonga Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Chatacabra - Heavy Bowgun",
+			"requires": "|Chatacabra Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Congalala - Heavy Bowgun",
+			"requires": "|Congalala Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Doshaguma - Heavy Bowgun",
+			"requires": "|Doshaguma Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "G. Doshaguma - Heavy Bowgun",
+			"requires": "|G. Doshaguma Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "G. Ebony Odogaron - Heavy Bowgun",
+			"requires": "|G. Ebony Odogaron Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "G. Fulgur Anjanath - Heavy Bowgun",
+			"requires": "|G. Fulgur Anjanath Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "G. Rathalos - Heavy Bowgun",
+			"requires": "|G. Rathalos Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Gogmazios - Heavy Bowgun",
+			"requires": "|Gogmazios Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Gore Magala - Heavy Bowgun",
+			"requires": "|Gore Magala Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Gravios - Heavy Bowgun",
+			"requires": "|Gravios Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Gypceros - Heavy Bowgun",
+			"requires": "|Gypceros Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Hirabami - Heavy Bowgun",
+			"requires": "|Hirabami Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Jin Dahaad - Heavy Bowgun",
+			"requires": "|Jin Dahaad Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Lagiacrus - Heavy Bowgun",
+			"requires": "|Lagiacrus Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Lala Barina - Heavy Bowgun",
+			"requires": "|Lala Barina Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Mizutsune - Heavy Bowgun",
+			"requires": "|Mizutsune Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Nerscylla - Heavy Bowgun",
+			"requires": "|Nerscylla Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Nu Udra - Heavy Bowgun",
+			"requires": "|Nu Udra Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Omega Planete - Heavy Bowgun",
+			"requires": "|Omega Planete Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Quematrice - Heavy Bowgun",
+			"requires": "|Quematrice Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Rathalos - Heavy Bowgun",
+			"requires": "|Rathalos Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Rathian - Heavy Bowgun",
+			"requires": "|Rathian Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Rey Dau - Heavy Bowgun",
+			"requires": "|Rey Dau Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Rompopolo - Heavy Bowgun",
+			"requires": "|Rompopolo Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Seregios - Heavy Bowgun",
+			"requires": "|Seregios Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Uth Duna - Heavy Bowgun",
+			"requires": "|Uth Duna Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Xu Wu - Heavy Bowgun",
+			"requires": "|Xu Wu Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Yian Kut-Ku - Heavy Bowgun",
+			"requires": "|Yian Kut-Ku Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Zoh Shia - Heavy Bowgun",
+			"requires": "|Zoh Shia Permit| and (|Heavy Bowgun Fire| or |Heavy Bowgun Water| or |Heavy Bowgun Thunder| or |Heavy Bowgun Ice| or |Heavy Bowgun Dragon| or |Heavy Bowgun Raw|)"
+		},
+		{
+			"name": "Ajarakan - Bow",
+			"requires": "|Ajarakan Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Arkveld - Bow",
+			"requires": "|Arkveld Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Balahara - Bow",
+			"requires": "|Balahara Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Blagonga - Bow",
+			"requires": "|Blagonga Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Chatacabra - Bow",
+			"requires": "|Chatacabra Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Congalala - Bow",
+			"requires": "|Congalala Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Doshaguma - Bow",
+			"requires": "|Doshaguma Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "G. Doshaguma - Bow",
+			"requires": "|G. Doshaguma Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "G. Ebony Odogaron - Bow",
+			"requires": "|G. Ebony Odogaron Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "G. Fulgur Anjanath - Bow",
+			"requires": "|G. Fulgur Anjanath Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "G. Rathalos - Bow",
+			"requires": "|G. Rathalos Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Gogmazios - Bow",
+			"requires": "|Gogmazios Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Gore Magala - Bow",
+			"requires": "|Gore Magala Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Gravios - Bow",
+			"requires": "|Gravios Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Gypceros - Bow",
+			"requires": "|Gypceros Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Hirabami - Bow",
+			"requires": "|Hirabami Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Jin Dahaad - Bow",
+			"requires": "|Jin Dahaad Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Lagiacrus - Bow",
+			"requires": "|Lagiacrus Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Lala Barina - Bow",
+			"requires": "|Lala Barina Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Mizutsune - Bow",
+			"requires": "|Mizutsune Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Nerscylla - Bow",
+			"requires": "|Nerscylla Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Nu Udra - Bow",
+			"requires": "|Nu Udra Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Omega Planete - Bow",
+			"requires": "|Omega Planete Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Quematrice - Bow",
+			"requires": "|Quematrice Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Rathalos - Bow",
+			"requires": "|Rathalos Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Rathian - Bow",
+			"requires": "|Rathian Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Rey Dau - Bow",
+			"requires": "|Rey Dau Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Rompopolo - Bow",
+			"requires": "|Rompopolo Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Seregios - Bow",
+			"requires": "|Seregios Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Uth Duna - Bow",
+			"requires": "|Uth Duna Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Xu Wu - Bow",
+			"requires": "|Xu Wu Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Yian Kut-Ku - Bow",
+			"requires": "|Yian Kut-Ku Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		},
+		{
+			"name": "Zoh Shia - Bow",
+			"requires": "|Zoh Shia Permit| and (|Bow Fire| or |Bow Water| or |Bow Thunder| or |Bow Ice| or |Bow Dragon| or |Bow Raw|)"
+		}
+	]
 }
-
