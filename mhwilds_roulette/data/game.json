@@ -12,7 +12,11 @@
         },
         {
             "item_categories": ["Monster"],
-            "random": 3
+            "random": 1
+        },
+        {
+            "item_categories": ["Map"],
+            "random": 1
         },
         {
             "items": ["Wounded Hollow Access"]

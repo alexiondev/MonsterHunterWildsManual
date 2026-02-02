@@ -16,7 +16,7 @@ LOCATIONS_FILE_FOOTER = """\t]
 
 REGIONS_FILE_PATH = "mhwilds_roulette/data/regions.json"
 REGIONS_FILE_HEADER = """{
-    "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.regions.schema.json,"
+    "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.regions.schema.json",
 """
 REGIONS_FILE_FOOTER = """}"""
 
@@ -33,7 +33,7 @@ MONSTERS = [
     "Ajarakan",
     "Arkveld",
     "Balahara",
-    "Blagonga",
+    "Blangonga",
     "Chatacabra",
     "Congalala",
     "Doshaguma",
@@ -52,7 +52,7 @@ MONSTERS = [
     "Mizutsune",
     "Nerscylla",
     "Nu Udra",
-    "Omega Planete",
+    "Omega Planetes",
     "Quematrice",
     "Rathalos",
     "Rathian",
@@ -90,6 +90,103 @@ ELEMENTS = [
     "Dragon",
     "Raw",
 ]
+
+MONSTER_PER_MAP = {
+    "Windward Plains": {
+        "Arkveld",
+        "Balahara",
+        "Chatacabra",
+        "Doshaguma",
+        "Gypceros",
+        "Quematrice",
+        "Rathian",
+        "Rey Dau",
+        "Seregios",
+    },
+    "Scarlet Forest": {
+        "Arkveld",
+        "Congalala",
+        "Doshaguma",
+        "Lagiacrus",
+        "Lala Barina",
+        "Mizutsune",
+        "Rathian",
+        "Rathalos",
+        "Uth Duna",
+        "Yian Kut-Ku",
+    },
+    "Oilwell Basin": {
+        "Ajarakan",
+        "Arkveld",
+        "Gogmazios",
+        "Gravios",
+        "Gypceros",
+        "Nerscylla",
+        "Nu Udra",
+        "Rathian",
+        "Rathalos",
+        "Rompopolo",
+    },
+    "Iceshard Cliffs": {
+        "Arkveld",
+        "Blangonga",
+        "Gore Magala",
+        "Gypceros",
+        "Hirabami",
+        "Jin Dahaad",
+        "Nerscylla",
+        "Omega Planetes",
+        "Yian Kut-Ku",
+    },
+    "Ruins of Wyveria": {
+       "Ajarakan",
+       "Arkveld",
+       "Congalala",
+       "Doshaguma",
+       "G. Doshaguma",
+       "Gore Magala",
+       "Gravios",
+       "G. Ebony Odogaron",
+       "G. Fulgur Anjanath",
+       "Gypceros",
+       "Hirabami",
+       "Lala Barina",
+       "Mizutsune",
+       "Nerscylla",
+       "Quematrice",
+       "Rathalos",
+       "G. Rathalos",
+       "Seregios",
+       "Xu Wu",
+       "Zoh Shia",
+    },
+    "Wounded Hollow": {
+        "Ajarakan",
+        "Arkveld",
+        "Balahara",
+        "Blangonga",
+        "Chatacabra",
+        "Congalala",
+        "Doshaguma",
+        "Gore Magala",
+        "Gravios",
+        "Gypceros",
+        "Hirabami",
+        "Lagiacrus",
+        "Lala Barina",
+        "Mizutsune",
+        "Nerscylla",
+        "Nu Udra",
+        "Quematrice",
+        "Rathalos",
+        "Rathian",
+        "Rey Dau",
+        "Rompopolo",
+        "Seregios",
+        "Xu Wu",
+        "Yian Kut-Ku",
+    },
+}
 
 def access_pass(map_name):
     return f'{map_name} Access'
@@ -141,9 +238,10 @@ def generate_locations():
         elements = [f'|{weapon_element(weapon, element)}|' for element in ELEMENTS]
 
         for monster in MONSTERS:
+            zones = [f'|{access_pass(zone)}|' for zone in MONSTER_PER_MAP if monster in MONSTER_PER_MAP[zone]]
             output.append("\t\t{")
             output.append(f'\t\t\t"name": "{monster} - {weapon}",')
-            output.append(f'\t\t\t"requires": "|{permit(monster)}| and ({" or ".join(elements)})"')
+            output.append(f'\t\t\t"requires": "|{permit(monster)}| and ({" or ".join(elements)}) and ({" or ".join(zones)})"')
             output.append("\t\t},")
 
 
@@ -152,14 +250,6 @@ def generate_locations():
     with open(LOCATIONS_FILE_PATH, "w") as locations_file:
         locations_file.write("\n".join(output))
 
-def generate_regions():
-    output = [REGIONS_FILE_HEADER]
-
-    output[-1] = output[-1].replace(",", "")
-    output.append(REGIONS_FILE_FOOTER)
-    with open(REGIONS_FILE_PATH, "w") as regions_file:
-        regions_file.write("\n".join(output))
-    
 if __name__ == "__main__":
     generate_items()
     generate_locations()
