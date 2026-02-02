@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
 
-ITEMS_FILE_PATH = "src/data/items.json"
+ITEMS_FILE_PATH = "mhwilds_roulette/data/items.json"
 ITEMS_FILE_HEADER = """{
     "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.items.schema.json",
     "data": ["""
 ITEMS_FILE_FOOTER = """\t]
 }"""
 
-LOCATIONS_FILE_PATH = "src/data/locations.json"
+LOCATIONS_FILE_PATH = "mhwilds_roulette/data/locations.json"
 LOCATIONS_FILE_HEADER = """{
 	"$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.locations.schema.json",
     "data": ["""
 LOCATIONS_FILE_FOOTER = """\t]
 }"""
+
+REGIONS_FILE_PATH = "mhwilds_roulette/data/regions.json"
+REGIONS_FILE_HEADER = """{
+    "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.regions.schema.json,"
+"""
+REGIONS_FILE_FOOTER = """}"""
 
 MAPS = [
     "Windward Plains",
@@ -146,6 +152,14 @@ def generate_locations():
     with open(LOCATIONS_FILE_PATH, "w") as locations_file:
         locations_file.write("\n".join(output))
 
+def generate_regions():
+    output = [REGIONS_FILE_HEADER]
+
+    output[-1] = output[-1].replace(",", "")
+    output.append(REGIONS_FILE_FOOTER)
+    with open(REGIONS_FILE_PATH, "w") as regions_file:
+        regions_file.write("\n".join(output))
+    
 if __name__ == "__main__":
     generate_items()
     generate_locations()
